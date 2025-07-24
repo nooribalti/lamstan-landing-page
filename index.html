@@ -1,103 +1,97 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamstan Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-indigo-900 via-slate-900 to-black px-6 py-24 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-700/20 via-transparent to-transparent"></div>
+      <div class="z-10 max-w-4xl">
+        <h1 class="text-6xl font-extrabold leading-tight bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200 bg-clip-text text-transparent">
+          Lamstan Technologies
+        </h1>
+        <p class="mt-4 text-xl text-slate-300">Building Bold, Scalable, and Creative Digital Solutions</p>
+        <p class="mt-2 text-lg text-slate-400">Web Development • DevOps Engineering • Video Animation</p>
+        <div class="mt-6">
+          <a href="#contact" class="bg-yellow-400 text-gray-900 text-lg px-6 py-3 rounded-full shadow-xl hover:scale-105 inline-block transition-transform">Get a Free Consultation</a>
+        </div>
+      </div>
+    </section>
 
-export default function LandingPage() {
-  return (
-    <div className="bg-slate-950 text-slate-100 font-sans">
-      {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-indigo-900 via-slate-900 to-black px-6 py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-700/20 via-transparent to-transparent"></div>
-        <div className="z-10 max-w-4xl">
-          <h1 className="text-6xl font-extrabold leading-tight bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200 bg-clip-text text-transparent">
-            Lamstan Technologies
-          </h1>
-          <p className="mt-4 text-xl text-slate-300">
-            Building Bold, Scalable, and Creative Digital Solutions
+    <!-- About Section -->
+    <section class="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-4">About Us</h2>
+        <p class="text-slate-300 text-lg">
+          At Lamstan Technologies, we deliver impactful digital experiences by fusing creativity with code. Our mission is to empower startups and enterprises with tech-driven growth using modern web development, reliable DevOps practices, and captivating animations.
+        </p>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-2xl border border-slate-800">
+        <img src="https://source.unsplash.com/600x400/?team,tech" alt="Team working" class="w-full h-auto object-cover" />
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-8 hover:scale-[1.03] transition-transform">
+          <h3 class="text-2xl font-semibold mb-4 text-yellow-300">Web Development</h3>
+          <p class="text-slate-300">
+            Responsive websites, portals, and eCommerce platforms built with React, Next.js, Laravel and more.
           </p>
-          <p className="mt-2 text-lg text-slate-400">
-            Web Development • DevOps Engineering • Video Animation
-          </p>
-          <div className="mt-6">
-            <Button className="bg-yellow-400 text-gray-900 text-lg px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-transform">
-              Get a Free Consultation
-            </Button>
-          </div>
         </div>
-      </section>
-
-      {/* About Section */}
-      <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 className="text-4xl font-bold mb-4">About Us</h2>
-          <p className="text-slate-300 text-lg">
-            At Lamstan Technologies, we deliver impactful digital experiences by fusing creativity with code. Our mission is to empower startups and enterprises with tech-driven growth using modern web development, reliable DevOps practices, and captivating animations.
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-8 hover:scale-[1.03] transition-transform">
+          <h3 class="text-2xl font-semibold mb-4 text-yellow-300">DevOps Services</h3>
+          <p class="text-slate-300">
+            CI/CD pipelines, Dockerization, cloud deployments on AWS, and automation with Terraform & Ansible.
           </p>
         </div>
-        <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-800">
-          <img src="/images/about-team.jpg" alt="Team working" className="w-full h-auto object-cover" />
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-8 hover:scale-[1.03] transition-transform">
+          <h3 class="text-2xl font-semibold mb-4 text-yellow-300">Video Animation</h3>
+          <p class="text-slate-300">
+            Motion graphics, explainers, 2D/3D animations that boost brand storytelling and user engagement.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      {/* Services Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6">
-        <h2 className="text-4xl font-bold text-center mb-16">Our Services</h2>
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          <Card className="bg-slate-800 border border-slate-700 backdrop-blur-md shadow-lg hover:scale-[1.03] transition-transform">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 text-yellow-300">Web Development</h3>
-              <p className="text-slate-300">
-                Responsive websites, portals, and eCommerce platforms built with React, Next.js, Laravel and more.
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="bg-slate-800 border border-slate-700 backdrop-blur-md shadow-lg hover:scale-[1.03] transition-transform">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 text-yellow-300">DevOps Services</h3>
-              <p className="text-slate-300">
-                CI/CD pipelines, Dockerization, cloud deployments on AWS, and automation with Terraform & Ansible.
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="bg-slate-800 border border-slate-700 backdrop-blur-md shadow-lg hover:scale-[1.03] transition-transform">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 text-yellow-300">Video Animation</h3>
-              <p className="text-slate-300">
-                Motion graphics, explainers, 2D/3D animations that boost brand storytelling and user engagement.
-              </p>
-            </CardContent>
-          </Card>
+    <!-- Why Choose Us -->
+    <section class="py-24 px-6 max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12">Why Choose Lamstan?</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-left text-lg text-slate-300">
+        <div class="flex items-start space-x-4">
+          <span class="text-yellow-400">✔</span><span>Agile Approach & Transparent Process</span>
         </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-24 px-6 max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12">Why Choose Lamstan?</h2>
-        <div className="grid md:grid-cols-2 gap-6 text-left text-lg text-slate-300">
-          {["Agile Approach & Transparent Process", "Fast Turnaround & Affordable Pricing", "Dedicated Team of Developers, Designers & DevOps Engineers", "Focus on Quality & Innovation"].map((item, index) => (
-            <div key={index} className="flex items-start space-x-4">
-              <CheckCircle className="text-yellow-400 w-6 h-6 mt-1" />
-              <span>{item}</span>
-            </div>
-          ))}
+        <div class="flex items-start space-x-4">
+          <span class="text-yellow-400">✔</span><span>Fast Turnaround & Affordable Pricing</span>
         </div>
-      </section>
+        <div class="flex items-start space-x-4">
+          <span class="text-yellow-400">✔</span><span>Dedicated Team of Developers, Designers & DevOps Engineers</span>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="text-yellow-400">✔</span><span>Focus on Quality & Innovation</span>
+        </div>
+      </div>
+    </section>
 
-      {/* Contact Section */}
-      <section className="py-24 bg-slate-900 px-6 text-center">
-        <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
-        <p className="mb-2 text-slate-300 text-lg">📧 inayatnoori92@gmail.com</p>
-        <p className="mb-2 text-slate-300 text-lg">📍 Karachi, Pakistan</p>
-        <Button className="mt-6 bg-yellow-400 text-gray-900 px-8 py-3 text-lg rounded-full shadow-xl hover:scale-105 transition-transform">
-          Let’s Work Together
-        </Button>
-      </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900 px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+      <p class="mb-2 text-slate-300 text-lg">📧 inayatnoori92@gmail.com</p>
+      <p class="mb-2 text-slate-300 text-lg">📍 Karachi, Pakistan</p>
+      <a href="mailto:inayatnoori92@gmail.com" class="mt-6 inline-block bg-yellow-400 text-gray-900 px-8 py-3 text-lg rounded-full shadow-xl hover:scale-105 transition-transform">
+        Let’s Work Together
+      </a>
+    </section>
 
-      {/* Footer */}
-      <footer className="text-center py-6 text-sm text-slate-500 border-t border-slate-800">
-        © 2025 Lamstan Technologies. All rights reserved.
-      </footer>
-    </div>
-  );
-}
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm text-slate-500 border-t border-slate-800">
+      © 2025 Lamstan Technologies. All rights reserved.
+    </footer>
+  </body>
+</html>
