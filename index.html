@@ -1,92 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lamstan Technologies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+    header {
+      background-color: #f6f8fa;
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .service {
+      flex: 1 1 250px;
+    }
+    footer {
+      background: #f6f8fa;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
-
-<body class="bg-white text-gray-800">
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-blue-700">Lamstan Technologies</h1>
-      <nav class="space-x-4 text-sm text-gray-700">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#services" class="hover:text-blue-600">Services</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </nav>
+<body>
+  <header>
+    <div class="hero-text">
+      <h1>Software Development & Digital Solutions</h1>
+      <p>We provide web development, DevOps, and video animation services.</p>
+      <a href="#about" class="btn">Learn More</a>
     </div>
+    <img src="https://undraw.co/api/illustrations/26c43083-b90f-490f-8755-5c97933aa3d5" alt="Hero Illustration" width="300" />
   </header>
 
-  <section class="bg-blue-50 py-20 text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-blue-700 mb-4">Building Scalable, Creative & Reliable Digital Solutions</h2>
-      <p class="text-lg text-gray-700 mb-6">Web Development • DevOps Engineering • Video Animation</p>
-      <a href="#contact" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-700 transition">Get a Free Consultation</a>
-    </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Lamstan Technologies is a leading software development company dedicated to delivering high-quality digital solutions. Our team of experts is committed to helping businesses grow and succeed through innovative and customized services.</p>
   </section>
 
-  <section id="about" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold text-blue-800 mb-6">About Us</h3>
-      <p class="text-gray-700 max-w-3xl mx-auto">At Lamstan Technologies, we deliver impactful digital experiences by fusing creativity with code. Our mission is to empower startups and enterprises with tech-driven growth using modern web development, reliable DevOps practices, and captivating animations.</p>
-    </div>
-  </section>
-
-  <section id="services" class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-3xl font-semibold text-blue-800 text-center mb-10">Our Services</h3>
-      <div class="grid gap-8 md:grid-cols-3">
-        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-          <h4 class="text-xl font-bold text-blue-700 mb-2">Web Development</h4>
-          <p class="text-gray-600">Responsive websites, portals, and eCommerce platforms built with React, Next.js, Laravel and more.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-          <h4 class="text-xl font-bold text-blue-700 mb-2">DevOps Services</h4>
-          <p class="text-gray-600">CI/CD pipelines, Dockerization, cloud deployments on AWS, and automation with Terraform & Ansible.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-          <h4 class="text-xl font-bold text-blue-700 mb-2">Video Animation</h4>
-          <p class="text-gray-600">Motion graphics, explainers, 2D/3D animations that boost brand storytelling and user engagement.</p>
-        </div>
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Building responsive and user-friendly websites.</p>
+      </div>
+      <div class="service">
+        <h3>DevOps</h3>
+        <p>Implementing efficient and scalable CI/CD pipelines.</p>
+      </div>
+      <div class="service">
+        <h3>Video Animation</h3>
+        <p>Crafting engaging and visually appealing animations.</p>
       </div>
     </div>
   </section>
 
-  <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold text-blue-800 mb-8">Why Choose Lamstan?</h3>
-      <ul class="space-y-3 text-gray-700">
-        <li>✔ Agile Approach & Transparent Process</li>
-        <li>✔ Fast Turnaround & Affordable Pricing</li>
-        <li>✔ Dedicated Team of Developers, Designers & DevOps Engineers</li>
-        <li>✔ Focus on Quality & Innovation</li>
-      </ul>
-    </div>
+  <section>
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for more information or to discuss your project.</p>
+    <p>Email: <a href="mailto:inayatnoori92@gmail.com">inayatnoori92@gmail.com</a></p>
   </section>
 
-  <section id="contact" class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold text-blue-800 mb-6">Contact Us</h3>
-      <p class="text-gray-700 mb-2">📧 inayatnoori92@gmail.com</p>
-      <p class="text-gray-700">📍 Skardu, Baltistan</p>
-      <a href="mailto:inayatnoori92@gmail.com" class="mt-4 inline-block px-6 py-3 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-700 transition">Let’s Work Together</a>
-    </div>
-  </section>
-
-  <footer class="bg-white border-t py-6">
-    <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
-      © 2025 Lamstan Technologies. All rights reserved.
-    </div>
+  <footer>
+    &copy; 2025 Lamstan Technologies. All rights reserved.
   </footer>
 </body>
-
 </html>
