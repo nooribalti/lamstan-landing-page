@@ -1,211 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lamstan Technologies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
     body {
-      background: linear-gradient(135deg, #0a0f2c, #1b2b55);
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #0a0f2c;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 5%;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #00d4ff;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 25px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00d4ff;
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height: 100vh;
-      text-align: center;
-      background: linear-gradient(120deg, #0e1b3c 0%, #192852 100%);
-      padding: 0 20px;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      color: #fff;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #cfcfcf;
-      margin-bottom: 40px;
-    }
-
-    .hero .cta-btn {
-      background-color: #00d4ff;
-      color: #0a0f2c;
-      border: none;
-      padding: 14px 28px;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .hero .cta-btn:hover {
-      background-color: #00b8e6;
-    }
-
-    section {
-      padding: 80px 5%;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section-title {
-      font-size: 2.2rem;
-      color: #00d4ff;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .about, .contact {
-      color: #e4e4e4;
-      text-align: center;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-    }
-
-    .service-card {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.3s ease, background-color 0.3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-10px);
-      background-color: rgba(0, 212, 255, 0.1);
-    }
-
-    .service-card i {
-      font-size: 2.5rem;
-      color: #00d4ff;
-      margin-bottom: 20px;
-    }
-
-    .service-card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .service-card p {
-      color: #cfcfcf;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      background-color: #0a0f2c;
-      text-align: center;
-      padding: 30px 0;
-      color: #888;
-      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Lamstan Technologies</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+<body class="bg-white text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-700">Lamstan Technologies</h1>
+      <nav class="space-x-4 text-sm text-gray-700">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Empowering Growth with Code & Creativity</h2>
-    <p>Web Development • DevOps Engineering • Video Animation</p>
-    <button class="cta-btn">Get a Free Consultation</button>
+  <section class="bg-blue-50 py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-blue-700 mb-4">Building Scalable, Creative & Reliable Digital Solutions</h2>
+      <p class="text-lg text-gray-700 mb-6">Web Development • DevOps Engineering • Video Animation</p>
+      <a href="#contact" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-700 transition">Get a Free Consultation</a>
+    </div>
   </section>
 
-  <section id="about" class="about">
-    <h2 class="section-title">About Us</h2>
-    <p>
-      At Lamstan Technologies, we craft digital experiences that blend strategy, creativity, and cutting-edge technology. Our mission is to enable startups and enterprises to scale through impactful websites, efficient DevOps practices, and powerful animations.
-    </p>
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-6">About Us</h3>
+      <p class="text-gray-700 max-w-3xl mx-auto">At Lamstan Technologies, we deliver impactful digital experiences by fusing creativity with code. Our mission is to empower startups and enterprises with tech-driven growth using modern web development, reliable DevOps practices, and captivating animations.</p>
+    </div>
   </section>
 
-  <section id="services">
-    <h2 class="section-title">Our Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Web Development</h3>
-        <p>Custom websites, eCommerce platforms, and dashboards using React, Laravel, and more.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-server"></i>
-        <h3>DevOps Engineering</h3>
-        <p>Infrastructure automation, CI/CD pipelines, cloud deployments, and performance optimization.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-film"></i>
-        <h3>Video Animation</h3>
-        <p>Explainer videos, 2D/3D animations, and motion graphics to elevate your brand storytelling.</p>
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-blue-800 text-center mb-10">Our Services</h3>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-blue-700 mb-2">Web Development</h4>
+          <p class="text-gray-600">Responsive websites, portals, and eCommerce platforms built with React, Next.js, Laravel and more.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-blue-700 mb-2">DevOps Services</h4>
+          <p class="text-gray-600">CI/CD pipelines, Dockerization, cloud deployments on AWS, and automation with Terraform & Ansible.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-blue-700 mb-2">Video Animation</h4>
+          <p class="text-gray-600">Motion graphics, explainers, 2D/3D animations that boost brand storytelling and user engagement.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <p>📧 inayatnoori92@gmail.com</p>
-    <p>📍 Karachi, Pakistan</p>
-    <br>
-    <button class="cta-btn">Let’s Work Together</button>
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-8">Why Choose Lamstan?</h3>
+      <ul class="space-y-3 text-gray-700">
+        <li>✔ Agile Approach & Transparent Process</li>
+        <li>✔ Fast Turnaround & Affordable Pricing</li>
+        <li>✔ Dedicated Team of Developers, Designers & DevOps Engineers</li>
+        <li>✔ Focus on Quality & Innovation</li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    © 2025 Lamstan Technologies. All rights reserved.
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-6">Contact Us</h3>
+      <p class="text-gray-700 mb-2">📧 inayatnoori92@gmail.com</p>
+      <p class="text-gray-700">📍 Karachi, Pakistan</p>
+      <a href="mailto:inayatnoori92@gmail.com" class="mt-4 inline-block px-6 py-3 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-700 transition">Let’s Work Together</a>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
+      © 2025 Lamstan Technologies. All rights reserved.
+    </div>
   </footer>
 </body>
+
 </html>
